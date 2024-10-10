@@ -1,14 +1,39 @@
 
 /*APARTADO DE CARRUCEL EN LA SECCION DE GASTRONOMIA*/
 
+.titulot{
+  text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-shadow: 9px 7px 10px rgb(3, 138, 248); /* Sombra del texto para dar profundidad */
+}
+
+.titulos{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.parrafos{
+text-align: center;
+
+}
+.separador{
+
+  background: linear-gradient(to right, transparent, #5fcfff, transparent);  /* Degradado centrado */
+    border: none;               /* Elimina el borde predeterminado */
+    height: 15px;                /* Ajusta el grosor del separador */
+    background-color: #000000;   /* Cambia el color del separador */
+    width: 90%;                 /* Ajusta el ancho del separador (opcional) */
+    margin: 30px auto;          /* Centra el separador horizontalmente (opcional) */
+}
+
 .carrusel {
+  margin: auto;
     position: relative;
-    width: 60%;
+    width: 50%;
     max-width: 1000px;
     overflow: hidden;
     background: #fff;
     border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 40px rgba(13, 178, 228, 0.982);
 }
 
 .imagenes img {
@@ -115,6 +140,7 @@ body {
 }
 
 .parrafo-centrado {
+
   text-align: center; /* Justifica el texto */
   margin: 15px 0; /* Margen superior e inferior */
 }

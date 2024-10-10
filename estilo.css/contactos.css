@@ -1,0 +1,61 @@
+/* estilos.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('fondo.jpg'); /* imagen de fondo */
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #239faa;
+    border: 10px solid #08b7ec;
+    box-shadow: 0 10px rgba(81, 222, 10, 0.875);
+    text-align: center;
+}
+
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.puntuacion {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}

@@ -1,0 +1,373 @@
+/* Importa la fuente "Bebas Neue" desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*
+pagina index. pagina principal historia de cucuta.
+*/
+
+/* Estilos para el contenedor principal */
+.container {
+  /* Establece el ancho máximo del contenedor en 1200 píxeles */
+  max-width: 1200px;
+  /* Centra el contenedor horizontalmente y elimina el margen izquierdo y derecho */
+  margin: 0 auto;
+  /* Agrega un espacio de relleno de 15 píxeles a la izquierda y derecha del contenedor */
+  padding: 0 15px;
+}
+
+/* Estilos para la sección "about" */
+.about {
+  /* Agrega un espacio de relleno de 50 píxeles en la parte superior e inferior del elemento */
+  padding: 50px 0;
+}
+
+/* Estilos para el título h2 dentro de la sección "about" */
+.about h2 {
+  /* Centra el texto horizontalmente dentro del elemento <h2> */
+  text-align: center;
+  /* Establece el tamaño de fuente en 30 píxeles */
+  font-size: 30px;
+  /* Agrega un margen inferior de 30 píxeles al elemento <h2> */
+  margin-bottom: 30px;
+}
+
+/* Estilos para el párrafo dentro de la sección "about" */
+.about p {
+  /* Centra el texto horizontalmente dentro del elemento <p> */
+  text-align: center;
+  /* Establece el tamaño de fuente en 17 píxeles */
+  font-size: 17px;
+  /* Establece la altura de línea en 2.0 */
+  line-height: 2.0;
+  /* Agrega un margen inferior de 20 píxeles al elemento <p> */
+  margin-bottom: 20px;
+}
+
+/* Estilos para la sección "about-info" */
+.about-info {
+  /* Establece la propiedad de display en flex para que los elementos se ajusten horizontalmente */
+  display: flex;
+  /* Justifica el contenido horizontalmente */
+  justify-content: space-around;
+  /* Permite que los elementos se ajusten en varias líneas */
+  flex-wrap: wrap;
+}
+
+/* Estilos para cada elemento "info-item" dentro de la sección "about-info" */
+.info-item {
+  /* Establece el ancho del elemento en 300 píxeles */
+  width: 400px;
+  /* Agrega un margen inferior de 30 píxeles al elemento */
+  margin-bottom: 30px;
+  /* Centra el texto horizontalmente dentro del elemento */
+  text-align: center;
+}
+
+/* Estilos para el título h3 dentro de cada elemento "info-item" */
+.info-item h3 {
+  /* Establece el tamaño de fuente en 20 píxeles */
+  font-size: 20px;
+  /* Agrega un margen inferior de 10 píxeles al elemento <h3> */
+  margin-bottom: 10px;
+}
+
+/* Estilos para el párrafo dentro de cada elemento "info-item" */
+.info-item p {
+  /* Establece el tamaño de fuente en 15 píxeles */
+  font-size: 15px;
+  /* Establece la altura de línea en 1.5 */
+  line-height: 1.5;
+}
+
+/* Estilos para el contenido dentro de la sección "contenido" */
+.contenido p {
+  /* Establece la propiedad de display en flex para que los elementos se ajusten horizontalmente */
+  display: flex;
+  /* Justifica el contenido horizontalmente */
+  justify-content: center;
+  /* Alinea el contenido verticalmente */
+  align-items: center;
+  /* Centra el texto horizontalmente dentro del elemento */
+  text-align: center;
+  /* Justifica el texto horizontalmente dentro del elemento */
+  text-align: justify;
+  /* Agrega un margen izquierdo y derecho de 15% al elemento */
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/* Estilos para la sección "about" */
+.about {
+  /* Establece el color de fondo en un gris claro */
+  background-color: #f5f4f386;
+  /* Agrega un espacio de relleno de 20 píxeles para mejorar la legibilidad */
+  padding: 20px;
+  /* Centra el contenido horizontalmente dentro del elemento */
+  text-align: center;
+  /* Centra el elemento horizontalmente y elimina el margen izquierdo y derecho */
+    margin: 0 auto; /* Center the section horizontally */
+    /* Centra la sección horizontalmente y elimina el margen izquierdo y derecho */
+    max-width: 1200px; /* Set a maximum width for the section */
+    /* Establece un ancho máximo de 800 píxeles para la sección */
+    border-radius: 20px; /* Add a subtle border radius */
+    /* Agrega un radio de borde suave de 10 píxeles */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.187); /* Add a subtle box shadow */
+    /* Agrega una sombra de caja suave de 10 píxeles con un 10% de opacidad */
+  }
+  
+  .about .container {
+    display: flex; /* Make the container a flex container */
+    /* Convierte el contenedor en un contenedor flexible */
+    flex-direction: column;/* Stack the content vertically */
+    /* Apila el contenido verticalmente */
+    align-items: center; /* Center the content horizontally */
+    /* Centra el contenido horizontalmente */
+  }
+  
+  .about h2 {
+    color: #050000; /* Darker text color for better contrast */
+    /* Establece un color de texto más oscuro para mejorar el contraste */
+    margin-bottom: 10px; /* Add some margin between the heading and paragraph */
+    /* Agrega un margen de 10 píxeles entre el título y el párrafo */
+  }
+  
+  .about p {
+    color: #000000; /* Medium text color for better readability */
+    /* Establece un color de texto medio para mejorar la legibilidad */
+    margin-bottom: 20px; /* Add some margin between paragraphs */
+    /* Agrega un margen de 20 píxeles entre los párrafos */
+  }
+
+/* Estilo del título */
+.titulo {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal; /* Fuente elegante */
+    font-size: 90px; /* Tamaño grande para ser llamativo */
+    text-align: center;
+    color: #ffffffdc !important; /* Asegura que el texto sea blanco */
+    text-shadow: 4px 4px 8px rgba(47, 209, 238, 0.9); /* Sombra más pronunciada */
+    z-index: 5; /* Asegura que el título esté por encima de cualquier otro elemento */
+    position: relative; /* Mantiene el título en su posición */
+    margin-top: 5%;
+ 
+}
+
+/* Fondo oscuro con opacidad */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 30%;
+    background-color: rgba(255, 254, 254, 0); /* Opacidad para que el fondo sea oscuro */
+    z-index: 1; /* Asegura que el fondo esté por debajo del texto */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+
+  transition: top 0.3s;
+
+  position: fixed; /* Fija la posición de la barra de navegación */
+  /* Esta propiedad hace que la barra de navegación se quede en una posición fija en la pantalla, 
+     incluso cuando se desplaza la página hacia abajo */
+  top: 0; /* Coloca la barra de navegación en la parte superior de la página */
+  /* Esta propiedad establece la posición vertical de la barra de navegación en 0, lo que significa 
+     que se colocará en la parte superior de la página */
+  width: 100%; /* Establece el ancho de la barra de navegación en 100% */
+  /* Esta propiedad establece el ancho de la barra de navegación en 100% del ancho de la pantalla, 
+     lo que significa que se extenderá a lo ancho de la página */
+  background-color: #5b5d565c; /* Establece un fondo gris claro para la barra de navegación */
+  /* Esta propiedad establece el color de fondo de la barra de navegación en un gris claro */
+  padding: 1%; /* Agrega un espacio de relleno de 10 píxeles para mejorar la legibilidad */
+  /* Esta propiedad agrega un espacio de relleno de 10 píxeles entre el contenido de la barra de 
+     navegación y sus bordes, lo que mejora la legibilidad */
+  z-index: 1000; /* Asegura que la barra de navegación esté encima de otros elementos */
+  /* Esta propiedad establece la capa de la barra de navegación en 1000, lo que significa que 
+     estará encima de otros elementos en la página */
+}
+
+/* Estilos para la barra de navegación */
+.navbar ul {
+  padding: 0%;
+  font-family: Georgia, 'Times New Roman', Times, serif; /* Fuente principal y alternativa */
+  font-weight: 600; /* Grosor de la fuente */
+  font-style: normal; /* Estilo de la fuente */
+  list-style-type: none; /* Elimina los puntos de la lista */
+  margin: 0; /* Elimina el margen */
+  padding: 0; /* Elimina el relleno */
+  overflow: hidden; /* Oculta el contenido desbordante */
+  display: flex; /* Utiliza flexbox para el diseño */
+  justify-content: space-around; /* Distribuye los elementos uniformemente */
+}
+
+/* Estilos para los elementos de la lista */
+.navbar ul li {
+  display: inline; /* Muestra los elementos en línea */
+}
+
+/* Estilos para los enlaces dentro de los elementos de la lista */
+.navbar ul li a {
+  border-radius: 20px;
+  border-color: #11b8c4;
+  display: block; /* El enlace ocupa todo el espacio del elemento de la lista */
+  color: rgb(255, 255, 255); /* Color del texto */
+  text-align: center; /* Centra el texto */
+  padding: 14px 20px; /* Relleno interno del enlace */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  font-size: 18px; /* Tamaño de la fuente */
+  font-weight: bold; /* Grosor de la fuente */
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+/* Estilos para los enlaces al pasar el cursor sobre ellos */
+.navbar ul li a:hover {
+  background-color: #11b8c4; /* Color de fondo al pasar el cursor */
+  color: black; /* Color del texto al pasar el cursor */
+}
+
+.portada {
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    transform: translateX(5%); /* Centra la imagen horizontalmente */
+    width: 90%; /* O ajusta el tamaño según lo que necesites */
+    max-height: 450px; /* Ajusta la altura máxima si es necesario */
+    border: px solid #ece4e4; /* Cambia el color y el grosor del borde según tus necesidades */
+    padding: 0px; /* Opcional: agrega espacio entre la imagen y el borde */
+    border-radius: 18px; /* Opcional: redondea las esquinas del borde */
+    
+}
+  /*------------------------------------------------------------------------------------------------------*/
+  body {
+    font-family: Arial, sans-serif; /* Establece la fuente del cuerpo del documento como Arial, con una alternativa sans-serif. */
+    background-color: #f5f5f5; /* Define un color de fondo gris claro para el cuerpo. */
+}
+
+.titulo-alucinante {
+    font-size: 36px; /* Define un tamaño de fuente grande para el título. */
+    font-weight: bold; /* Hace que el texto del título sea negrita. */
+    color: #333; /* Establece el color del texto a un gris oscuro. */
+    text-align: center; /* Centra el texto del título en la página. */
+}
+
+.parrafo-centrado {
+    text-align: center; /* Centra el texto de los párrafos con esta clase. */
+    margin-bottom: 20px; /* Añade un margen inferior de 20 píxeles para separar este párrafo de otros elementos. */
+}
+
+section {
+   
+    padding: 20px; /* Añade un relleno de 20 píxeles dentro de las secciones para espaciar el contenido. */
+    margin-bottom: 20px; /* Proporciona un margen inferior de 20 píxeles entre secciones. */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil alrededor de las secciones para un efecto de profundidad. */
+    position: relative; /* Establece la posición relativa para que los elementos hijos puedan ser posicionados de manera absoluta en relación a esta sección. */
+}
+
+.icono {
+    position: absolute; /* Posiciona el ícono de forma absoluta dentro de su elemento contenedor. */
+    bottom: 10px; /* Ubica el ícono 10 píxeles desde el fondo de la sección. */
+    right: 10px; /* Ubica el ícono 10 píxeles desde el lado derecho de la sección. */
+    font-size: 24px; /* Define un tamaño de fuente de 24 píxeles para el ícono. */
+    color: #333; /* Establece el color del ícono a un gris oscuro. */
+}
+
+img {
+    width: 100%; /* Hace que las imágenes se ajusten al 100% del ancho de su contenedor. */
+    height: 200px; /* Establece una altura fija de 200 píxeles para las imágenes. */
+    object-fit: cover; /* Asegura que la imagen cubra completamente el área designada, recortando si es necesario. */
+    margin-bottom: 20px; /* Proporciona un margen inferior de 20 píxeles para espaciar imágenes de otros elementos. */
+}
+
+footer {
+    background-color: #333; /* Establece un color de fondo gris oscuro para el pie de página. */
+    color: #ffffff; /* Cambia el color del texto a blanco para mejorar la legibilidad sobre el fondo oscuro. */
+    padding: 10px; /* Añade un relleno de 10 píxeles dentro del pie de página para espaciar el contenido. */
+    text-align: center; /* Centra el texto del pie de página. */
+}
+
+  /* Estilo para la clase .mi-imagen */
+  .mi-imagen {
+    width: 500px; /* Establece el ancho de la imagen a 300 píxeles */
+    height: 300px; /* Establece la altura de la imagen a 200 píxeles */
+    border-radius: 30px;
+    border-style: double;
+  }
+
+    /* Estilo para la clase .mi-imagen */
+    .historia {
+      width: 500px; /* Establece el ancho de la imagen a 300 píxeles */
+      height: 300px; /* Establece la altura de la imagen a 200 píxeles */
+      border-radius: 30px;
+      border-style: double;
+      
+    }
+    .epoca_precolombina_cucuta{
+      width: 600px; /* Establece el ancho de la imagen a 300 píxeles */
+      height: 300px; /* Establece la altura de la imagen a 200 píxeles */
+      border-radius: 20px;
+      border-style: double;
+    
+
+    }
+  /*parte final de la pagina*/
+.hero{
+  border-radius: 40px; /*redondea bordes*/
+  border-style: double;
+
+}
+
+.belleza {
+  border-radius: 40px; /*redondea bordes*/
+  border-style: double;
+  width: 340px; /* Establece el ancho de la imagen a 300 píxeles */
+  height: px; /* Establece la altura de la imagen a 200 píxeles */
+  border-radius: 20px;
+  border-style: double;
+}
+
+.historia-2 {
+  border-radius: 40px; /*redondea bordes*/
+  border-style: double;
+  width: 340px; /* Establece el ancho de la imagen a 300 píxeles */
+  height: px; /* Establece la altura de la imagen a 200 píxeles */
+  border-radius: 20px;
+  border-style: double;
+}
+.cultura {
+  border-radius: 40px; /*redondea bordes*/
+  border-style: double;
+  width: 340px; /* Establece el ancho de la imagen a 300 píxeles */
+  height: px; /* Establece la altura de la imagen a 200 píxeles */
+  border-radius: 20px;
+  border-style: double;
+}
+
+.conquista-española {
+  border-radius: 40px; /*redondea bordes*/
+  border-style: double;
+  width: 340px; /* Establece el ancho de la imagen a 300 píxeles */
+  height: px; /* Establece la altura de la imagen a 200 píxeles */
+  border-radius: 20px;
+  border-style: double;
+}
+
+.desarrollo-colonial {
+  border-radius: 40px; /*redondea bordes*/
+  border-style: double;
+  width: 340px; /* Establece el ancho de la imagen a 300 píxeles */
+  height: px; /* Establece la altura de la imagen a 200 píxeles */
+  border-radius: 20px;
+  border-style: double;
+}
+.independencia {
+  border-radius: 40px; /*redondea bordes*/
+  border-style: double;
+  width: 340px; /* Establece el ancho de la imagen a 300 píxeles */
+  height: px; /* Establece la altura de la imagen a 200 píxeles */
+  border-radius: 20px;
+  border-style: double;
+}
+

@@ -1,0 +1,301 @@
+
+
+/* listado de previsualizacion de imagenes el la historia del parque_cucuta */
+
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #374b4baf;
+    color: #fafafa;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  
+  .navbar li {
+    margin-right: 10px;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .navbar a:hover {
+    color: #22b0ae;
+  }
+  
+  .navbar a span {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .navbar a span::before {
+    content: attr(data-text);
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: none;
+    color: #666;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilos para la barra de navegación en dispositivos móviles */
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+    }
+  
+    .navbar li {
+      margin-bottom: 10px;
+    }
+  }
+
+
+
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Times New Roman', Times, serif; /* Fuente para el texto */
+    margin: 0; /* Sin márgenes */
+    padding: 0; /* Sin relleno */
+    background-color: #485d62; /* Color de fondo */
+    text-align: center; /* Centrar texto */
+}
+
+/* Estilo para el encabezado */
+header {
+    background: #353232; /* Fondo oscuro */
+    color: rgb(153, 133, 133); /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo para el contenido principal */
+main {
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo para las secciones de lugares */
+.lugar {
+    margin: 20px auto; /* Margen superior e inferior, centrado horizontalmente */
+    max-width: 800px; /* Ancho máximo de la sección */
+    padding: 15px; /* Espaciado interno */
+    background: url('fondo_informacion.jpg') no-repeat center center; /* Imagen de fondo */
+    background-size: cover; /* Ajustar el tamaño de la imagen al contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(252, 252, 252, 0.2); /* Sombra más pronunciada */
+    color: white; /* Color del texto */
+    text-align: center; /* Centrar texto en la sección */
+}
+
+/* Estilo para los encabezados de las secciones */
+h2 {
+    color: #e5b851; /* Color dorado para los títulos */
+    font-family: 'Verdana', sans-serif; /* Fuente llamativa para el título */
+}
+
+/* Estilo para los párrafos */
+p {
+    color: #ffffff; /* Color del texto de los párrafos */
+    font-size: 1.1em; /* Tamaño de fuente más grande para mejorar la legibilidad */
+}
+
+/* Estilo para el carrusel */
+.carrusel {
+
+    position: relative;
+    max-width: 500px; /* Ancho máximo del carrusel */
+    margin: auto; /* Centrar el carrusel */
+    overflow: hidden; /* Ocultar imágenes fuera del contenedor */
+}
+
+/* Listado de imágenes en el carrusel */
+.imagenes {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transición suave */
+}
+
+/* Imágenes dentro del carrusel */
+.imagenes img {
+    width: 100%; /* Ancho de la imagen */
+    height: auto; /* Alto automático */
+    object-fit: cover; /* Ajustar imagen sin deformar */
+    display: none; /* Ocultar todas las imágenes inicialmente */
+}
+
+/* Mostrar la primera imagen */
+.imagenes img:first-child {
+    display: block; /* Mostrar solo la primera imagen */
+    animation: fadeIn 0.5s forwards; /* Animación al aparecer */
+}
+
+/* Efecto de animación al entrar */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Comienza oculto */
+    }
+    100% {
+        opacity: 1; /* Termina visible */
+    }
+}
+
+/* Estilo para las flechas del carrusel */
+.flechas {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 100%; /* Ancho completo */
+    
+}
+
+.flecha-izquierda {
+    left: 10px; /* Posición de la flecha izquierda */
+    background: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    color: white; /* Color blanco */
+    font-size: 24px; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor puntero */
+  
+}
+
+.flecha-derecha {
+    right: 10px; /* Posición de la flecha derecha */
+    background: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    color: white; /* Color blanco */
+    font-size: 24px; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor puntero */
+}
+
+/* Estilo para el pie de página */
+footer {
+    text-align: center; /* Centrar texto */
+    padding: 10px; /* Espaciado interno */
+    background: #cdced2; /* Fondo oscuro */
+    color: white; /* Color del texto */
+    position: relative; /* Posicionamiento relativo */
+    bottom: 0; /* Alineación al fondo */
+    width: 100%; /* Ancho completo */
+}
+
+.carrusel {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+  }
+  
+  .imagenes {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .imagenes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 10px;
+  }
+  
+  .flechas {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .flecha-izquierda {
+    left: 10px;
+  }
+  
+  .flecha-derecha {
+    right: 10px;
+  }
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Times New Roman', Times, serif; /* Fuente para el texto */
+    margin: 0; /* Sin márgenes */
+    padding: 0; /* Sin relleno */
+    background-color: #485d62; /* Color de fondo */
+    text-align: center;
+}
+
+/* Estilo para el encabezado */
+header {
+    background: #353232; /* Fondo oscuro */
+    color: rgb(175, 47, 47); /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+}
+
+/* Estilo para el contenido principal */
+main {
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo para las secciones de lugares */
+.lugar {
+    margin: 20px auto; /* Margen superior e inferior, centrado horizontalmente */
+    max-width: 800px; /* Ancho máximo de la sección */
+    padding: 15px; /* Espaciado interno */
+    background: url('fondo_informacion.jpg') no-repeat center center; /* Imagen de fondo */
+    background-size: cover; /* Ajustar el tamaño de la imagen al contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(252, 252, 252, 0.2); /* Sombra más pronunciada */
+    color: white; /* Color del texto */
+    text-align: center; /* Centrar texto en la sección */
+}
+
+/* Estilo para los encabezados de las secciones */
+h2 {
+    color: #e5b851; /* Color dorado para los títulos */
+    font-family: 'Verdana', sans-serif; /* Fuente llamativa para el título */
+}
+
+/* Estilo para los párrafos */
+p {
+    color: #ffffff; /* Color del texto de los párrafos */
+    font-size: 1.1em; /* Tamaño de fuente más grande para mejorar la legibilidad */
+}
+
+/* Estilo para las imágenes */
+img {
+    max-width: 100%; /* Ancho máximo */
+    height: auto; /* Alto automático */
+    border-radius: 20px; /* Bordes redondeados */
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 7s ease; /* Transición suave */
+}
+
+/* Clase para la animación de las imágenes */
+.fade {
+    animation: fadeIn 5s forwards; /* Animación de aparición */
+}
+
+/* Keyframes para la animación de aparición */
+@keyframes fadeIn {
+    to {
+        opacity: 2; /* Finaliza visible */
+    }
+}
+
+/* Estilo para el pie de página */
+footer {
+    text-align: center; /* Centrar texto */
+    padding: 10px; /* Espaciado interno */
+    background: #46484e; /* Fondo oscuro */
+    color: white; /* Color del texto */
+    position: relative; /* Posicionamiento relativo */
+    bottom:0; /* Alineación al fondo */
+    width: 100%; /* Ancho completo */
+}

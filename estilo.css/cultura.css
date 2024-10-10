@@ -1,0 +1,173 @@
+
+/*APARTADO DE CARRUCEL EN LA SECCION DE GASTRONOMIA*/
+
+.carrusel {
+    position: relative;
+    width: 60%;
+    max-width: 1000px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.imagenes img {
+    width: 100%;
+    display: none; /* Ocultar todas las imágenes inicialmente */
+  }
+
+  .imagenes img.fade {
+      transition: opacity 0.9s ease;
+  }
+  
+  .flechas {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+  }
+  
+  .flechas button {
+      background: rgba(255, 255, 255, 0.7);
+      border: none;
+      border-radius: 10px;
+      padding: 10px;
+      cursor: pointer;
+  }
+  
+  .flechas button:hover {
+      background: rgba(255, 255, 255, 1);
+  }
+  
+
+/*------------------------------------------------------------------------------------------------*/
+/* Reset CSS básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Asegura que el padding y el margen se calculen correctamente */
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Tipografía principal */
+  line-height: 1.6; /* Mejora la legibilidad */
+  background-color: #3f3d3fdb; /* Color de fondo */
+  color: #000000; /* Color del texto */
+}
+
+.titulo {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center; /* Centra el título */
+  font-size: 3.5rem; /* Tamaño de fuente del título principal */
+  margin: 20px 0; /* Margen superior e inferior */
+  color: #f1eaef; /* Color azul */
+  text-shadow: 9px 7px 10px rgb(3, 138, 248); /* Sombra del texto para dar profundidad */
+}
+
+.navbar {
+  background-color: #000000; /* Color de fondo de la barra de navegación */
+  padding: 18px 0; /* Relleno en la parte superior e inferior */
+  font-family: 'Courier New', Courier, monospace; /* Tipo de letra de la barra de navegación */
+}
+
+.navbar ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  display: flex; /* Disposición en línea */
+  justify-content: center; /* Centra los elementos de la lista */
+}
+
+.navbar li {
+  margin: 0 15px; /* Espacio entre los elementos de la lista */
+}
+
+.navbar a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: white; /* Color del texto de los enlaces */
+  font-size: 1.2rem; /* Tamaño de fuente de los enlaces */
+  transition: color 0.3s; /* Efecto de transición al cambiar el color */
+}
+
+.navbar a:hover {
+  color: #d8c304; /* Color de los enlaces al pasar el ratón */
+}
+
+.container-1, section {
+
+  margin: 20px auto; /* Margen superior e inferior, centrado horizontalmente */
+  padding: 20px; /* Relleno interno */
+  max-width: 800px; /* Ancho máximo de la sección */
+  background-color: white; /* Color de fondo blanco */
+  border-radius: 40px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para un efecto elevado */
+}
+
+.titulo-alucinante {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  color: #000000; /* Color para subtítulos */
+  font-size: 2rem; /* Tamaño de fuente de los subtítulos */
+  margin-bottom: 15px; /* Margen inferior */
+  border-bottom: 4px solid #e67e22; /* Línea debajo del subtítulo */
+  padding-bottom: 10px; /* Relleno inferior */
+  text-shadow: 3px 2px 4px rgba(5, 255, 226, 0.9); /* Sombra del texto para profundidad */
+}
+
+.parrafo-centrado {
+  text-align: center; /* Justifica el texto */
+  margin: 15px 0; /* Margen superior e inferior */
+}
+.img {
+
+  border-radius: 10%;
+  display: block; /* Cambia la imagen a un elemento de bloque */
+  margin-left: auto; /* Márgenes automáticos a la izquierda */
+  margin-right: auto; /* Márgenes automáticos a la derecha */
+  max-width: 80%; /* Hace que la imagen sea responsive */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+footer {
+ border-style: double;
+font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #fafafa; /* Color de fondo del pie de página */
+  color: rgb(3, 0, 0); /* Color del texto en el pie de página */
+  text-align: center; /* Centra el texto del pie de página */
+  padding: 20% 10; /* Relleno superior e inferior */
+}
+
+.hero-text {
+ font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #71716f79; /* Color de fondo para el texto destacado */
+  padding: 10px; /* Relleno interno */
+  border-radius: 20px; /* Bordes redondeados */
+  margin: 20px 0; /* Margen superior e inferior */
+}
+
+.hero-button {
+
+  background-color: #72723d; /* Color del botón */
+  color: rgb(255, 255, 255); /* Color del texto del botón */
+  padding: 10px 20px; /* Relleno interno del botón */
+  text-decoration: none; /* Elimina el subrayado del texto del botón */
+  border-radius: 5px; /* Bordes redondeados del botón */
+  transition: background-color 0.3s; /* Efecto de transición al cambiar el color */
+}
+
+.hero-button:hover {
+  background-color: #2a4270; /* Color del botón al pasar el ratón */
+}
+
+hr {
+  border: 9px solid #22e6e6; /* Color de las líneas divisorias */
+  margin: 20px 0; /* Margen superior e inferior */
+}
+
+.subtitulos {
+  text-align: center; /* Centra el texto horizontalmente */
+  margin: 20px 0;    /* Espaciado superior e inferior (ajusta según necesites) */
+font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px; /* Ajusta el tamaño de la fuente según tus necesidades */
+  color: #070707; /* Cambia el color del texto */
+}

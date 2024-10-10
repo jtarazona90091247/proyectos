@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas de Páginas</title>
+    <link rel="icon" href="ICONO/ICONO_RESEÑA.jpg">
+    <link rel="stylesheet" href="estilo.css/contacto.css">
+</head>
+<body>
+    <header>
+        <h1>RESEÑA DE LAS PAGINAS VISITADAS</h1>
+    </header>
+    <main>
+        <section class="formulario">
+            <h2 class="calificacion">DEJANOS TU CALIFICACIÓN</h2>
+            
+            <form action="formulario.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br><br>
+                <label for="telefono">Telefono:</label>
+                <input type="text" id="telefono" name="telefono" required>
+                <br><br>
+                <label for="email">Correo Electronico</label>
+                <input type="text" id="email" name="email" required>
+                <br><br>
+                <label for="reseña">Reseña:</label>
+                <textarea id="reseñas" name="reseñas" rows="4" cols="50" required></textarea>
+                <br><br>
+                <button type="submit">Enviar Reseña</button>
+            </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
